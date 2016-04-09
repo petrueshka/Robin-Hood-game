@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head><title>Hood</title></head>
+<body>
+
+<script type="text/javascript">
+ 
+
+
+var user = prompt("Robin Hood meets the Sheriff. Choose if he -" , " should ROB, HUG or FLEE").toLowerCase();
+switch(user){
+    case "rob":
+      document.write("<p>CA-CHING! More cash to give to the poor.");
+        break;
+        case "hug":
+            document.write("<p>Ouch! You got Robin Hood killed :( ");
+            break;
+            case "flee":
+                var drunk = prompt("Is the Sheriff drunk?", "type YES or NO").toLowerCase();
+                var fat = prompt("Is the Sheriff fat?","YES or NO").toLowerCase();
+                if (drunk === "yes" && fat === "yes"){
+                    document.write("<p>Beep - Beep! Off he runs. You saved Robin's arse!");
+                }else if
+                (drunk === "yes" || fat === "yes"){
+                    console.log("Sheriff almost got him! Phew.");
+                    }else{
+                       document.write("<p>Well done, genious. You got Robin Hood behind the bars. Are you working for that Sheriff?");
+                    };
+                break;
+                default:
+                document.write("<p>Well... who knows what would happen if he " + user + "ed him?.. I don't.");
+}
+
+
+
+</script>
+
+</body>
+</html>
